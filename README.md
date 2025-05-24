@@ -1,5 +1,5 @@
 # javascript.replace
-以下是一個關於 `replace` 方法的 README 範本，您可以根據需要進行調整：
+
 
 ---
 
