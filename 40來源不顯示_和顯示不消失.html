@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>JavaScript Variables</h1>
+
+
+
+  顯示計算結果
+  <p id="demo"></p>
+
+  <hr>
+  <h2>資料來源</h2>
+  <!-- visibility:hidden 一開始隱藏 -->
+  <div id="source1" style="visibility:hidden">
+    firstName:
+    <div id="firstName1">aaa</div>
+    lastName:
+    <div id="lastName">bbb</div>
+    <p></p>
+  </div>
+  <button type="button" onclick='fun1()'>
+    Click Me!
+  </button>
+
+  <script>
+    function fun1() {
+      //  id="source1" 不要顯示
+      // 一：div style="display:none">區塊中的內容　/div
+      // 二：div style="visibility:hidden">區塊中的內容　/div
+      let 被複製的資料 = document.getElementById("source1").innerHTML;
+      let 修改後的html = 被複製的資料.replace('id="firstName1"', 'id="firstName2"'); //把firstName1 換成firstName2
+
+
+      let 修改後的html2 = 修改後的html.replace("aaa", "ccc");
+
+      // 資料添加在 id="demo" 後面 
+      let 原本的html = document.getElementById("demo").innerHTML;  // 取得原本的html
+      let 添加後的html = 原本的html + 修改後的html2;
+      // 字串相加 相加後就可以持續顯示在區域
+      document.getElementById("demo").innerHTML = 添加後的html;     //放入
+    }
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
