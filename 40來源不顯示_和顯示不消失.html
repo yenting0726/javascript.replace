@@ -14,9 +14,9 @@
   <!-- visibility:hidden 一開始隱藏 -->
   <div id="source1" style="visibility:hidden">
     firstName:
-    <div id="firstName1">aaa</div>
+    <div id="firstName">陳</div>
     lastName:
-    <div id="lastName">bbb</div>
+    <div id="lastName">大明</div>
     <p></p>
   </div>
   <button type="button" onclick='fun1()'>
@@ -32,7 +32,7 @@
       let 修改後的html = 被複製的資料.replace('id="firstName1"', 'id="firstName2"'); //把firstName1 換成firstName2
 
 
-      let 修改後的html2 = 修改後的html.replace("aaa", "ccc");
+      let 修改後的html2 = 修改後的html.replace("陳", "林");
 
       // 資料添加在 id="demo" 後面 
       let 原本的html = document.getElementById("demo").innerHTML;  // 取得原本的html
